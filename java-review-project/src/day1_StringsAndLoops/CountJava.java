@@ -1,5 +1,9 @@
 package day1_StringsAndLoops;
 
+/**
+ * Task-2
+ * Write a program that will count how many times “java” is found in any given String
+ */
 public class CountJava {
 
     public static void main(String[] args) {

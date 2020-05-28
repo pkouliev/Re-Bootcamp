@@ -1,5 +1,12 @@
 package day1_StringsAndLoops;
 
+/**
+ * Task-4
+ * Given any String print out how many times each character is found in the String Ex: java
+ * j–1
+ * a–2
+ * v–1
+ */
 public class CountLetters {
 
     public static void main(String[] args) {
