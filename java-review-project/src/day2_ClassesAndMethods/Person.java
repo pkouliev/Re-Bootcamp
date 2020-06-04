@@ -2,8 +2,8 @@ package day2_ClassesAndMethods;
 
 public class Person {
 
-    String name; // Instance variable of String called name
-    int age;     // Instance variable of int called age
+    private String name; // Instance variable of String called name
+    private int age;     // Instance variable of int called age
 
     void setAge(int age) {  // the setAge method will accept an int value and
         this.age = age;     // store that value to the instance valuable
@@ -17,7 +17,15 @@ public class Person {
         return age;                 // It will return the instance age value of the object acted on as int
     }
 
-    // The return keyword is how this metod give a value
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // The return keyword is how this method give a value
 
     public static void main(String[] args) {
 
@@ -41,5 +49,12 @@ public class Person {
         System.out.println(ageVal);     // variable value will be returned so it must be caught
         // in order to be used. Then the variable ageVal will
         // print the value that was returned from the method
+
+        Person p1 = new Person();
+
+        p1.setName("Mike");
+        p1.setAge(27);
+
+        System.out.println("Name: " + p1.getName() + "\nAge: " + p1.getAge());
     }
 }
