@@ -6,9 +6,24 @@ public class Animal {
 
     public Animal() {
 
-    }
-
-    public Animal(int i) {
+        name = "No name";
 
     }
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    int getNum() {
+        return 10;
+    }
+
+//    @Override
+//    public String toString() {
+//        return getName();
+//    }
 }

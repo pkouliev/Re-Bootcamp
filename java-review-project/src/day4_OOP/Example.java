@@ -1,4 +1,6 @@
 package day4_OOP;
 
-public class Example {
+public abstract class Example implements Teachable {
+
+
 }
